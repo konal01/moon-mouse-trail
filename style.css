@@ -1,0 +1,56 @@
+body {
+    background-color: black;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0;
+    font-family: Arial, sans-serif;
+}
+#trailer{
+    
+    height: 30px;
+    width: 30px;
+    background-color: aliceblue;
+    border-radius: 50%;
+    position:fixed;
+    left:0%;
+    top:0%;
+    z-index: 10000;
+    pointer-events: none;
+    opacity:0;
+    transition: opacity 500ms ease;
+    box-shadow: 0px 0px 20px rgb(197, 130, 255);
+  
+}
+
+body:hover > #trailer {
+    opacity:1;
+  
+}
+
+#text{
+
+    color: white;
+    font-size: 100px;
+    font-weight: 800;
+   justify-content: center ;
+   align-items: center;
+   display: flex;
+   opacity: 0.3;
+   transition: 0.5s ease;
+    
+
+}
+
+#text:hover{
+     opacity:1;
+     text-shadow: 0px 0px 80px rgb(197, 130, 255);
+     transform: scale(1.1);
+  
+}
+
+#text:hover > #trailer{
+    opacity: 0;
+}
+
